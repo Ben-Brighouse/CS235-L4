@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Track</title>
+    <link rel="stylesheet"  href="../static/css/main.css">
+</head>
+<body>
+
+    {% include 'navbar.html' %}
+
+    <div class="main-content">
+        <div class="song">
+        <img class="song-cover" src="../static/coverart/{{ track.cover_art }}" alt="">
+        <div class="song-details">
+          <p class="song-genre">{{ track.genre }}</p>
+          <h2 class="song-title">{{ track.title }}</h2>
+          <p class="song-artist">{{ track.artist_name }}</p>
+          <p class="song-album">{{ track.album_title }}</p>
+
+          <div class="playback">
+            <div class="playback-bar"></div>
+            <div class="playback-controls">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 6h2v12H6zm3.5 6L18 6v12z"/></svg>
+              <span class="play">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              </span>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 6h2v12h-2zM6 6l8.5 6L6 18z"/></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
+

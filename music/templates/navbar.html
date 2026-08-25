@@ -1,0 +1,19 @@
+<div class="navbar">
+      <div>
+        <ul class="nav-links">
+          <li><a href="{{ url_for('home_bp.home') }}"   class="{{ 'active' if page_title == 'Home'   }}"><span class="label">Home</span></a></li>
+          <li><a href="{{ url_for('tracks_bp.browse') }}" class="{{ 'active' if page_title == 'Browse' }}"><span class="label">Browse</span></a></li>
+          <li><a href=""><span class="label">Charts</span></a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>My Library</h3>
+        <ul class="menulist">
+          <li><span class="label">Playlists</span></li>
+          <li><a href=""><span class="label">Albums</span></a></li>
+          <li><a href="{{ url_for('tracks_bp.browse') }}"><span class="label">Songs</span></a></li>
+          <li><a href=""><span class="label">Artists</span></a></li>
+          <li><span class="label">Genres</span></li>
+        </ul>
+      </div>
+    </div>
